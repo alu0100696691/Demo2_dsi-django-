@@ -58,7 +58,7 @@ ROOT_URLCONF = 'P6.urls'
 WSGI_APPLICATION = 'P6.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/tony/dsi/django/P6/practica6/templates',
+    '/home/tony/dsi/django/p6/practica6/templates',
 )
 
 
@@ -71,7 +71,11 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+###########################################################################
+STATIC_ROOT = ''
+STATIC_URL = '/css/'
+STATICFILES_DIRS = ('/home/tony/dsi/django/p6/practica6/css',)
+##########################################################################
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
@@ -88,15 +92,3 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
-STATIC_URL = '/static/'
-
-
-#################################################################################################################
-
- 
-## Make your TEMPLATE_DIRS variable look like this
-#TEMPLATE_DIRS = (
-#    root + "/../practica5/templates/",
-#)
-

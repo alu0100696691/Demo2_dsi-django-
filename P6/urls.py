@@ -17,7 +17,9 @@ urlpatterns = patterns('',
 
 
 
-    #url(r'^admin/', include(admin.site.urls)),
+    
+	#url(r'^admin/', include(admin.site.urls)),
+    #(r'^$',homefun),
     url(r'^help', 'practica6.views.help', name='help'),
     url(r'^home', 'practica6.views.home', name='home'),
     url(r'^about', 'practica6.views.about', name='about'),
